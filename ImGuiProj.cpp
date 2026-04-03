@@ -4,7 +4,7 @@
 
 #endif
 
-#include <glad/glad.h>
+#include <glad/glad.h> // glfw3.dll
 #include <iostream>
 #include <Windows.h>
 #include "src/imgui.h"
@@ -36,7 +36,7 @@ int main() {
 
     ImGuiIO& IO = ImGui::GetIO();
     IO.ConfigFlags = ImGuiConfigFlags_ViewportsEnable;
-    IO.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\ebrimabd.ttf", 20.0f);
+    IO.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\ebrimabd.ttf", 12.5f);
     IO.ConfigDpiScaleFonts = true;
 
     char path_DLL[260] = "\0";
